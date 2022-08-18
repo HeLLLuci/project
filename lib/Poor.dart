@@ -12,7 +12,8 @@ class _PoorState extends State<Poor> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
+      appBar: AppBar(
+        centerTitle: true,
         title: Text("Bhai Tu Bhi Gareeeb?"),
         backgroundColor: Colors.brown,
         shadowColor: Colors.white,
@@ -22,13 +23,21 @@ class _PoorState extends State<Poor> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Container(
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.brown,width: 10,style: BorderStyle.solid),
-                borderRadius: BorderRadius.circular(15)
-              ),
-              child: Image(image: AssetImage("assets/images/gareeb.jpg"),width: 250,))
-        ],),
+            Container(
+                decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.brown,
+                        width: 10,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(15)),
+                child: Image(
+                  image: AssetImage("assets/images/gareeb.jpg"),
+                  width: 250,
+                ),
+            ),
+            Text("Meri Haalat itni Patli Ho gayi hai ki chai paani ka bhi paisa nahi hai, Aasu pi pi ke kaam chalaa raha hu",style: TextStyle(fontSize: 30),)
+          ],
+        ),
       ),
     );
   }

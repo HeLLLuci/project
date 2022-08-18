@@ -25,8 +25,16 @@ class _RichState extends State<Rich> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-                decoration: BoxDecoration(border: Border.all(style: BorderStyle.solid,width: 10,color: Colors.redAccent),borderRadius: BorderRadius.circular(15)),
-                child: Image(image: AssetImage("assets/images/diamond-outline-png-23736 (1).jpg"),width: 250))
+                decoration: BoxDecoration(
+                    border: Border.all(
+                        style: BorderStyle.solid,
+                        width: 10,
+                        color: Colors.redAccent),
+                    borderRadius: BorderRadius.circular(15)),
+                child: Image(
+                    image: AssetImage(
+                        "assets/images/diamond-outline-png-23736 (1).jpg"),
+                    width: 250))
           ],
         ),
       ),

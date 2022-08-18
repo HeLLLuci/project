@@ -69,25 +69,22 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.all(50),
               width: 150,
               height: 50,
-              child: ElevatedButton(style: ButtonStyle(
-                backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.redAccent),
-                shape: MaterialStateProperty.all<OutlinedBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(15),
-                      topRight: Radius.circular(15)
-                    )
-                  )
-                ),
-              ),
+              child: ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.redAccent),
+                    shape: MaterialStateProperty.all<OutlinedBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(15),
+                                topRight: Radius.circular(15)))),
+                  ),
                   onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (Context) => Poor()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (Context) => Poor()));
                   },
                   child: Text("I am Poor")),
             )
-
           ],
         ),
       ),
