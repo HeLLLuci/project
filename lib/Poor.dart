@@ -13,15 +13,22 @@ class _PoorState extends State<Poor> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(centerTitle: true,
-        title: Text("Poor"),
+        title: Text("Bhai Tu Bhi Gareeeb?"),
         backgroundColor: Colors.brown,
         shadowColor: Colors.white,
       ),
       backgroundColor: Colors.brown[200],
-      body: Column(
-        children: [
-          Image(image: AssetImage("assets/images/gareeb.jpg"))
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.brown,width: 10,style: BorderStyle.solid),
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: Image(image: AssetImage("assets/images/gareeb.jpg"),width: 250,))
+        ],),
       ),
     );
   }
